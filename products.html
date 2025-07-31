@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products | LimeBag</title>
+    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="image/logo.png">
+  </head>
+  <body>
+    <!-- Header with Navigation -->
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo">Lime<span>Bag</span></a>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a id="active" href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="nav-icons">
+            <a href="login.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a>
+            <a href="signup.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign Up</a>
+          </div>
+          <div class="dashes">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+      <a href="index.html">Home</a>
+      <a id="active-resp" href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+
+      <hr id="resp-hr">
+
+      <div class="resp-social-links">
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="https://wa.me/"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+    </div>
+
+    <hr id="resp-hr">
+
+    <div class="basic-contact">
+        <a href="login.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a>
+        <a href="signup.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign Up</a>
+    </div>
+  </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Shop All Products</h1>
+        <p>
+          Discover our extensive range of eco-friendly and sustainable products.
+          From everyday essentials to special finds, we have everything you need
+          for a greener lifestyle.
+        </p>
+      </div>
+    </section>
+
+    <!-- Shop Section -->
+    <div class="shop-container">
+      <!-- Filters Sidebar -->
+      <div class="filters">
+        <div class="filter-group">
+          <h3>Categories</h3>
+          <div class="filter-options">
+            <div class="filter-checkbox">
+              <input
+                type="checkbox"
+                id="fashion"
+                name="category"
+                value="fashion"
+              />
+              <label for="fashion">Seasonal Picks</label>
+            </div>
+            <div class="filter-checkbox">
+              <input type="checkbox" id="home" name="category" value="home" />
+              <label for="home">Local Produce</label>
+            </div>
+            <div class="filter-checkbox">
+              <input
+                type="checkbox"
+                id="beauty"
+                name="category"
+                value="beauty"
+              />
+              <label for="beauty">Fresh Herbs & Greens</label>
+            </div>
+            <div class="filter-checkbox">
+              <input type="checkbox" id="food" name="category" value="food" />
+              <label for="food">Organic Food</label>
+            </div>
+            <div class="filter-checkbox">
+              <input
+                type="checkbox"
+                id="gadgets"
+                name="category"
+                value="gadgets"
+              />
+              <label for="gadgets">Exotic Fruits</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3>Price Range</h3>
+          <input
+            type="range"
+            min="0"
+            max="200"
+            value="100"
+            class="price-slider"
+            id="price-range"
+          />
+          <div class="price-inputs">
+            <input
+              type="number"
+              min="0"
+              max="200"
+              value="0"
+              id="min-price"
+              class="price-input"
+            />
+            <input
+              type="number"
+              min="0"
+              max="200"
+              value="100"
+              id="max-price"
+              class="price-input"
+            />
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3>Rating</h3>
+          <div class="filter-options">
+            <div class="filter-checkbox">
+              <input type="checkbox" id="rating5" name="rating" value="5" />
+              <label for="rating5">★★★★★</label>
+            </div>
+            <div class="filter-checkbox">
+              <input type="checkbox" id="rating4" name="rating" value="4" />
+              <label for="rating4">★★★★☆ & up</label>
+            </div>
+            <div class="filter-checkbox">
+              <input type="checkbox" id="rating3" name="rating" value="3" />
+              <label for="rating3">★★★☆☆ & up</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h3>Availability</h3>
+          <div class="filter-options">
+            <div class="filter-checkbox">
+              <input
+                type="checkbox"
+                id="in-stock"
+                name="availability"
+                value="in-stock"
+                checked
+              />
+              <label for="in-stock">In Stock</label>
+            </div>
+            <div class="filter-checkbox">
+              <input
+                type="checkbox"
+                id="out-of-stock"
+                name="availability"
+                value="out-of-stock"
+              />
+              <label for="out-of-stock">Out of Stock</label>
+            </div>
+          </div>
+        </div>
+
+        <button class="filter-btn">Apply Filters</button>
+      </div>
+
+      <!-- Products List -->
+      <div class="products-section">
+        <div class="products-header">
+          <div class="products-count">24 Products Found</div>
+          <div class="sort-options">
+            <label for="sort">Sort by:</label>
+            <select id="sort" class="sort-select">
+              <option value="recommended">Recommended</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="newest">Newest First</option>
+              <option value="rating">Highest Rated</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <img
+              src="image/1.png"
+              alt="Bamboo Toothbrush"
+              class="product-img"
+            />
+            <span class="product-badge">NEW</span>
+            <div class="product-info">
+              <p class="product-category">Vegetables</p>
+              <h3 class="product-title">Cabbage</h3>
+              <p class="product-price">$12.99</p>
+              <div class="product-rating">★★★★★</div>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <img
+              src="image/2.png"
+              alt="Cabbage"
+              class="product-img"
+            />
+            <div class="product-info">
+              <p class="product-category">Vegetables</p>
+              <h3 class="product-title">Broccoli</h3>
+              <p class="product-price">$24.99</p>
+              <div class="product-rating">★★★★☆</div>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <img
+              src="image/3.png"
+              alt="Reusable Water Bottle"
+              class="product-img"
+            />
+            <span class="product-badge">SALE</span>
+            <div class="product-info">
+              <p class="product-category">Fruits</p>
+              <h3 class="product-title">Banana</h3>
+              <p class="product-price">$19.99</p>
+              <div class="product-rating">★★★★★</div>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <img
+              src="image/4.jpeg"
+              alt="Natural Soap Bar"
+              class="product-img"
+            />
+            <div class="product-info">
+              <p class="product-category">Fruits</p>
+              <h3 class="product-title">Apples</h3>
+              <p class="product-price">$8.99</p>
+              <div class="product-rating">★★★★☆</div>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <img
+              src="image/1.png"
+              alt="Banana"
+              class="product-img"
+            />
+            <div class="product-info">
+              <p class="product-category">Fruits</p>
+              <h3 class="product-title">Orange</h3>
+              <p class="product-price">$12.99</p>
+              <div class="product-rating">★★★★★</div>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <img
+              src="image/2.png"
+              alt="Biodegradable Phone Case"
+              class="product-img"
+            />
+            <span class="product-badge">NEW</span>
+            <div class="product-info">
+              <p class="product-category">Fruits</p>
+              <h3 class="product-title">Avocado</h3>
+              <p class="product-price">$29.99</p>
+              <div class="product-rating">★★★★☆</div>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div class="product-card">
+            <img src="image/3.png" alt="Blueberries" class="product-img" />
+            <div class="product-info">
+              <p class="product-category">Organic Food</p>
+              <h3 class="product-title">Blueberries</h3>
+              <p class="product-price">$18.99</p>
+              <div class="product-rating">★★★★★</div>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div class="product-card">
+            <img src="image/4.jpeg" alt="Watermelon" class="product-img" />
+            <span class="product-badge">SALE</span>
+            <div class="product-info">
+              <p class="product-category">Fruits</p>
+              <h3 class="product-title">Watermelon</h3>
+              <p class="product-price">$14.99</p>
+              <div class="product-rating">★★★★☆</div>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="section-title">
+          <h2>Subscribe to Our Newsletter</h2>
+        </div>
+        <p>Stay updated with our newest products and special offers</p>
+
+        <form class="newsletter-form" action="subscribe.php" method="POST">
+          <input
+            type="email"
+            name="email"
+            class="newsletter-input"
+            placeholder="Enter your email"
+            required
+          />
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <h3>LimeBag</h3>
+            <p>
+              Your eco-friendly online marketplace offering sustainable products
+              for conscious consumers.
+            </p>
+            <div class="social-links">
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://wa.me/"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+              <li><a id="active-footer" href="products.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Products</a></li>
+              <li><a href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</a></li>
+              <li><a href="contact.html"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Customer Service</h3>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Shipping Policy</a></li>
+              <li><a href="#">Return Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column contact">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@LimeBag.com">info@LimeBag.com</a></li>
+              <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+00000000000">+000 0000 0000</a></li>
+              <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://maps.google.com">123 Eco Street, Green City</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 LimeBag • <a href="https://hassan-khalil.rf.gd/">GreenMart</a>'s clone.</p>
+          <p>All Rights Reserved. Optimized by <a href="https://nero404-dev.github.io/nero404-portfolio/">nero404</a></p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // JavaScript for Products page
+      document.addEventListener("DOMContentLoaded", function () {
+        // Price Range Slider
+        const priceSlider = document.getElementById("price-range");
+        const minPrice = document.getElementById("min-price");
+        const maxPrice = document.getElementById("max-price");
+
+        priceSlider.addEventListener("input", function () {
+          maxPrice.value = this.value;
+        });
+
+        minPrice.addEventListener("input", function () {
+          if (parseInt(this.value) > parseInt(maxPrice.value)) {
+            this.value = maxPrice.value;
+          }
+        });
+
+        maxPrice.addEventListener("input", function () {
+          if (parseInt(this.value) < parseInt(minPrice.value)) {
+            this.value = minPrice.value;
+          }
+          priceSlider.value = this.value;
+        });
+
+        // Filter Button
+        const filterBtn = document.querySelector(".filter-btn");
+        filterBtn.addEventListener("click", function () {
+          // In a real application, this would apply filters to the products
+          alert("Filters applied!");
+        });
+
+        // Product Sorting
+        const sortSelect = document.getElementById("sort");
+        sortSelect.addEventListener("change", function () {
+          // In a real application, this would sort the products
+          const sortValue = this.value;
+          console.log("Sorting by:", sortValue);
+          // Example of how you might update products based on selection
+          // fetchProducts(sortValue);
+        });
+
+        // Add to Cart functionality
+        const addToCartButtons = document.querySelectorAll(".btn");
+        addToCartButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const productTitle =
+              this.closest(".product-card").querySelector(
+                ".product-title"
+              ).textContent;
+            alert(`${productTitle} added to cart!`);
+          });
+        });
+      });
+    </script>
+
+    <!-- js resp nav -->
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+  </script>
+  </body>
+</html>

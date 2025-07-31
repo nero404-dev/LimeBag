@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | LimeBag</title>
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="image/logo.png">
+  </head>
+  <body>
+    <!-- Header with Navigation -->
+    <header>
+      <div class="container">
+        <nav>
+          <a href="index.html" class="logo">Lime<span>Bag</span></a>
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a id="active" href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <div class="nav-icons">
+            <a href="login.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a>
+            <a href="signup.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign Up</a>
+          </div>
+          <div class="dashes">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a id="active-resp" href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+  
+        <hr id="resp-hr">
+  
+        <div class="resp-social-links">
+            <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://wa.me/"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+        </div>
+
+        <hr id="resp-hr">
+
+        <div class="basic-contact">
+            <a href="login.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Login</a>
+            <a href="signup.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign Up</a>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>About LimeBag</h1>
+        <p>
+          Learn about our mission to make sustainable living accessible to
+          everyone and the passionate team behind our eco-friendly marketplace.
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="about-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Story</h2>
+        </div>
+
+        <div class="our-story">
+          <div class="story-image">
+            <img src="image/about.png" alt="LimeBag Store" />
+          </div>
+          <div class="story-content">
+            <h3>How It All Started</h3>
+            <p>
+              LimeBag was founded in 2020 by a group of environmental
+              enthusiasts who saw a need for a dedicated marketplace that makes
+              sustainable products accessible and affordable.
+            </p>
+            <p>
+              What began as a small online store with just a few eco-friendly
+              products has grown into a thriving marketplace featuring hundreds
+              of sustainable options from around the world.
+            </p>
+            <p>
+              We believe that small changes in everyday purchasing decisions can
+              lead to a significant positive impact on our planet. Our mission
+              is to make these eco-friendly choices easier for consumers by
+              bringing together the best sustainable products in one place.
+            </p>
+            <p>
+              Today, LimeBag serves thousands of environmentally conscious
+              customers and partners with over 150 ethical producers and
+              suppliers who share our commitment to sustainability and ethical
+              business practices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission and Values -->
+    <section class="mission-values">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Mission & Values</h2>
+        </div>
+
+        <div class="mission-container">
+          <div class="mission-card">
+            <div class="mission-icon">S</div>
+            <h3>Sustainability</h3>
+            <p>
+              We carefully select products with minimal environmental impact,
+              focusing on renewable materials, reduced carbon footprint, and
+              sustainable production methods.
+            </p>
+          </div>
+
+          <div class="mission-card">
+            <div class="mission-icon">T</div>
+            <h3>Transparency</h3>
+            <p>
+              We provide clear information about where our products come from,
+              how they're made, and their environmental impact so you can make
+              informed choices.
+            </p>
+          </div>
+
+          <div class="mission-card">
+            <div class="mission-icon">C</div>
+            <h3>Community</h3>
+            <p>
+              We support small businesses, artisans, and local producers who
+              share our environmental and social values, helping to build a
+              sustainable economy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Join Our Green Journey</h2>
+          <p>
+            Be part of our mission to create a more sustainable future. Shop our
+            eco-friendly products or join our newsletter to stay updated on
+            sustainable living tips and exclusive offers.
+          </p>
+          <div class="cta-buttons">
+            <a href="products.html" class="btn">Shop Now</a>
+            <a href="contact.html" class="btn btn-outline">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+          <div class="section-title">
+            <h2>Subscribe to Our Newsletter</h2>
+          </div>
+          <p>Stay updated with our newest products and special offers</p>
+  
+          <form class="newsletter-form" action="subscribe.php" method="POST">
+            <input
+              type="email"
+              name="email"
+              class="newsletter-input"
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+          </form>
+        </div>
+      </section>
+  
+      <!-- Footer -->
+    <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-column">
+              <h3>LimeBag</h3>
+              <p>
+                Your eco-friendly online marketplace offering sustainable products
+                for conscious consumers.
+              </p>
+              <div class="social-links">
+                  <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  <a href="https://wa.me/"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                  <a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+              </div>
+            </div>
+  
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="products.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Products</a></li>
+                <li><a id="active-footer" href="about.html"><i class="fa fa-info-circle" aria-hidden="true"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-column">
+              <h3>Customer Service</h3>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+  
+            <div class="footer-column contact">
+              <h3>Contact Us</h3>
+              <ul>
+                <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@LimeBag.com">info@LimeBag.com</a></li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+00000000000">+000 0000 0000</a></li>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="https://maps.google.com">123 Eco Street, Green City</a></li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="footer-bottom">
+            <p>&copy; 2025 LimeBag • <a href="https://hassan-khalil.rf.gd/">GreenMart</a>'s clone.</p>
+            <p>All Rights Reserved. Optimized by <a href="https://nero404-dev.github.io/nero404-portfolio/">nero404</a></p>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+      // JavaScript for About Us page
+      document.addEventListener("DOMContentLoaded", function () {
+        // Animation for stats counters
+        const statElements = document.querySelectorAll(".stat-item h3");
+
+        // Very simple animation for demonstration
+        statElements.forEach((element) => {
+          const target = parseInt(element.textContent);
+          let current = 0;
+          const increment = Math.ceil(target / 50);
+          const timer = setInterval(() => {
+            current += increment;
+            if (current > target) {
+              current = target;
+              clearInterval(timer);
+            }
+            element.textContent =
+              current + (element.textContent.includes("+") ? "+" : "");
+          }, 30);
+        });
+      });
+    </script>
+
+    <!-- js resp nav -->
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+  </body>
+</html>
